@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="module">
+      class Person {
+        constructor(name) {
+          this.name = name;
+        }
+      }
+
+      class User extends Person {
+        constructor(name) {
+          super(name);
+          this.email = `${this.name}@gmail.com`;
+          this.setAge = this.setAge.bind(this);
+        }
+
+        setAge(age){
+          this.age = age;
+        }
+      }
+
+      var user = new User('Alice');
+      user.setAge(22);
+      console.log(user.email);
+    </script>
+    <!-- crossorigin = call browser javascript file -->
+  </body>
+</html>

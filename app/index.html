@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="module" crossorigin>
+      import {add, sub} from './math.js';
+      // alert(sub(4,2));
+
+      const array = [1,2,3,4,5];
+
+      const map = array.map((item) => item * 2);
+
+      const filter = array.filter((item) => item % 2);
+
+      const find = array.find((item) => item == 2);
+
+      console.log(map);
+      console.log(filter);
+      console.log(find);
+    </script>
+    <!-- crossorigin = call browser javascript file -->
+  </body>
+</html>
